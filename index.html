@@ -2,310 +2,44 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Makemytrip | makemytrip</title>
+<title>Page not available</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
-:root{
-  --blue:#008cff;
-  --teal:#2fd3c6;
-  --bg:#f2f6f9;
-  --card:#ffffff;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --green:#16a34a;
-}
-
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
-
-/* ===== LOADER ===== */
-#loader{
-  position:fixed;
-  inset:0;
-  background:linear-gradient(180deg,var(--teal),#e6f7f5);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-}
-
-.spinner{
-  width:55px;
-  height:55px;
-  border:5px solid rgba(255,255,255,0.6);
-  border-top:5px solid var(--blue);
-  border-radius:50%;
-  animation:spin 1s linear infinite;
-}
-
-#loader p{
-  margin-top:16px;
-  font-weight:600;
-}
-
-@keyframes spin{
-  to{transform:rotate(360deg)}
-}
-
-/* ===== HEADER ===== */
-header{
-  background:linear-gradient(90deg,var(--teal),#7ddbd2);
-  padding:14px 24px;
-  color:white;
-}
-
-.topbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-/* ===== CONTAINER ===== */
-.container{
-  max-width:1000px;
-  margin:30px auto;
-  background:white;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* ===== TABS ===== */
-.tabs{
-  display:flex;
-  gap:30px;
-  padding:20px;
-  border-bottom:1px solid #e5e7eb;
-  font-weight:600;
-}
-
-.tab{
-  cursor:pointer;
-  padding-bottom:10px;
-}
-
-.tab.active{
-  color:var(--blue);
-  border-bottom:3px solid var(--blue);
-}
-
-/* ===== CONTENT ===== */
-.tab-content{
-  padding:30px;
-  display:none;
-}
-
-.tab-content.active{
-  display:block;
-}
-
-/* ===== EMPTY STATE ===== */
-.empty{
-  text-align:center;
-  padding:60px 20px;
-}
-
-.empty p{color:var(--muted)}
-
-/* ===== TRIP CARD ===== */
-.trip-card{
-  max-width:480px;
-  margin:0 auto;
-  background:white;
-  padding:22px;
-  border-radius:14px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
-}
-
-.fade-in{
-  animation:fadeIn .4s ease;
-}
-
-@keyframes fadeIn{
-  from{opacity:0; transform:translateY(10px)}
-  to{opacity:1; transform:translateY(0)}
-}
-
-/* HEADER */
-.trip-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.badge{
-  background:var(--green);
-  color:white;
-  padding:4px 12px;
-  border-radius:20px;
-  font-size:12px;
-  font-weight:700;
-}
-
-.completed-date{
-  font-size:12px;
-  color:var(--muted);
-}
-
-/* IMAGE */
-.hotel-img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:12px;
-  margin:14px 0;
-}
-
-/* TEXT */
-.muted{color:var(--muted); font-size:13px}
-hr{border:none; border-top:1px solid #e5e7eb; margin:15px 0}
-
-/* REVIEW */
-.review-box{
-  margin-top:18px;
-  padding:14px;
-  background:#f0fdf4;
-  border-radius:10px;
-  text-align:center;
-}
-
-.stars{
-  font-size:22px;
-  letter-spacing:4px;
-}
-
-/* DOWNLOAD */
-.download{
-  display:block;
-  margin-top:18px;
-  text-align:center;
-  background:var(--green);
-  color:white;
-  padding:12px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  font-size:12px;
-  color:#777;
-  margin:20px 0;
-}
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f2f6f9;
+    font-family:Segoe UI, Arial, sans-serif;
+    color:#1f2937;
+  }
+  .box{
+    background:white;
+    padding:40px 32px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+    max-width:360px;
+  }
+  h1{
+    font-size:22px;
+    margin-bottom:10px;
+  }
+  p{
+    color:#6b7280;
+    font-size:14px;
+    margin:0;
+  }
 </style>
 </head>
-
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="spinner"></div>
-  <p>Fetching your trips…</p>
-</div>
-
-<header>
-  <div class="topbar">
-    <b>Makemytrip</b>
-    <span>Hi Ashish</span>
+  <div class="box">
+    <h1>Page not available</h1>
+    <p>This link is no longer active.</p>
   </div>
-</header>
-
-<div class="container">
-
-  <!-- TABS -->
-  <div class="tabs">
-    <div class="tab" onclick="showTab('upcoming')">UPCOMING</div>
-    <div class="tab" onclick="showTab('cancelled')">CANCELLED</div>
-    <div class="tab active" onclick="showTab('completed')">COMPLETED</div>
-  </div>
-
-  <!-- UPCOMING -->
-  <div id="upcoming" class="tab-content">
-    <div class="empty">
-      <h3>No upcoming bookings</h3>
-      <p>Your future trips will appear here.</p>
-    </div>
-  </div>
-
-  <!-- CANCELLED -->
-  <div id="cancelled" class="tab-content">
-    <div class="empty">
-      <h3>No cancelled bookings</h3>
-      <p>You haven’t cancelled any trips.</p>
-    </div>
-  </div>
-
-  <!-- COMPLETED -->
-  <div id="completed" class="tab-content active">
-    <div class="trip-card fade-in">
-
-      <div class="trip-header">
-        <span class="badge">COMPLETED</span>
-        <span class="completed-date">Completed on 16 Jan 2026</span>
-      </div>
-
-      <img class="hotel-img"
-        src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
-        alt="Hotel">
-
-      <h3>Superior Triple Room</h3>
-      <p class="muted">Booking Date: 13 Jan 2026</p>
-
-      <hr>
-
-      <p><b>Guest:</b> Dhaval Vaghasiya</p>
-      <p><b>Guests:</b> 3 Adults</p>
-      <p><b>Stay:</b> 15 Jan 2026 – 16 Jan 2026</p>
-      <p><b>Amount Paid:</b> ₹2,967</p>
-      <p><b>Booking ID:</b> NH77167458079912</p>
-
-      <div class="review-box">
-        <b>Rate your stay</b>
-        <div class="stars">⭐⭐⭐</div>
-        <p class="muted">Your review helps other travellers</p>
-      </div>
-
-      <a class="download" href="Booking_Confirmation_Voucher.pdf" download>
-        ⬇ Download Booking Confirmation
-      </a>
-
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  ⚠ Demo UI only · Not affiliated with any travel company
-</footer>
-
-<script>
-/* LOADER */
-window.onload = () => {
-  setTimeout(() => {
-    document.getElementById("loader").style.display="none";
-  }, 2500);
-};
-
-/* TABS */
-function showTab(tab){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(c=>{
-    c.classList.remove('active','fade-in');
-  });
-
-  document.getElementById(tab).classList.add('active','fade-in');
-  event.target.classList.add('active');
-}
-</script>
 
 </body>
 </html>
